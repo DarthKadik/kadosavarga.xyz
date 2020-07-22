@@ -3,7 +3,7 @@
 /*
  * Lora
 ================================================================================ */
-@font-face {
+/* @font-face {
     font-family: 'lora-bold';
     src: url('../fonts/lora/lora-bold-webfont.eot');
     src: url('../fonts/lora/lora-bold-webfont.eot?#iefix') format('embedded-opentype'),
@@ -43,11 +43,11 @@
     font-weight: normal;
     font-style: normal;
 }
-
+*/
 
 /*
  * Poppins 
-================================================================================ */
+================================================================================ 
 @font-face {
     font-family: 'poppins-bold';
     src: url('../fonts/poppins/poppins-bold-webfont.eot');
@@ -104,3 +104,4 @@
     font-style: normal;
 }
 
+*/

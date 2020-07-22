@@ -19,7 +19,8 @@
    ================================================== -->
    <link rel="stylesheet" href="css/base.css">  
    <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/vendor.css">     
+   <link rel="stylesheet" href="css/vendor.css">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
    <!-- script
    ================================================== -->   
@@ -43,14 +44,14 @@
    			<a class="menu-toggle" href="#"><span>Menu</span></a>
 
 	   		<div class="logo">
-		         <a href="index.html">VARGA KADOSA</a>
+		         <a id="vk" href="index.html">Varga Kadosa</a>
 		      </div>		      
 
 		   	<nav id="main-nav-wrap">
 					<ul class="main-navigation">
 						<li class="current"><a class="smoothscroll"  href="#intro" title="">Főoldal</a></li>
 						<li><a class="smoothscroll"  href="#about" title="">Rólam</a></li>
-						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
+						<li><a class="smoothscroll"  href="#resume" title="">Tanulmányok</a></li>
 						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
 						<li><a class="smoothscroll"  href="#services" title="">Services</a></li>					
 						<li><a class="smoothscroll"  href="#contact" title="">Kapcsolat</a></li>	
@@ -112,7 +113,7 @@
 
    			<div class="intro-info">
 
-   				<img src="images/profil_p.jpg" alt="Profile Picture">
+   				<!-- <img src="images/profil_p.jpg" alt="Profile Picture"> -->
 
    				<p class="lead">Akár egy hétköznapi középiskolai diák is lehetnék, de egy kicsivel szeretek több lenni. </p>
    			</div>   			
@@ -145,8 +146,10 @@
    					<span>IT, Közgazdaság, Űrkutatás</span>
    				</li>
    				<li>
-   					<strong>Website:</strong>
-   					<span>www.kardswebsite.com</span>
+					   <strong>Website:</strong>
+					   <span>
+						   <a href="#" title="kadosavarga.xyz" class="">kadosavarga.xyz</a>
+					   </span>
    				</li>
    				<li>
    					<strong>Email:</strong>
@@ -159,13 +162,14 @@
 
    		<div class="col-six tab-full">
 
-   			<h3>Képességek</h3>
-   			<p>Jó vagyok minenben</p>
+   			<h3 style="text-align: center;">-</h3>
+			   <p></p>
+			   <img src="images/varga_kadosa_e-nevkartya.gif" alt="E-névkártya">
 
-				<ul class="skill-bars">
+			<!-- 	<ul class="skill-bars">
 				   <li>
-				   	<div class="progress percent90"><span>90%</span></div>
-				   	<strong>Királyság</strong>
+				   	<div class="progress percent65"><span>11 év</span></div>
+				   	<strong></strong>
 				   </li>
 				   <li>
 				   	<div class="progress percent85"><span>85%</span></div>
@@ -173,7 +177,7 @@
 				   </li>
 				   <li>
 				   	<div class="progress percent70"><span>70%</span></div>
-				   	<strong>Szexiség</strong>
+				   	<strong></strong>
 				   </li>
 				   <li>
 				   	<div class="progress percent95"><span>95%</span></div>
@@ -185,9 +189,9 @@
 				   	<strong>Gyomorméret</strong>
 				   </li>
       
-				</ul> <!-- /skill-bars -->		
+				</ul> 	-->
 
-		   </div>
+		</div> 
 
 		<hr>
 		   
@@ -247,10 +251,8 @@
 		<div class="row section-intro">
    		<div class="col-twelve">
 
-   			<h5>Resume</h5>
-   			<h1>Egyebek</h1>
-
-   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+   			<h5>Tanulmányok</h5>
+   			
 
    		</div>   		
    	</div> <!-- /section-intro--> 
@@ -259,13 +261,13 @@
 
    		<div class="col-twelve resume-header">
 
-   			<h2>TANULMÁNYOK</h2>
+   			<h1>Középiskolai tanulmányok</h1>
 
    		</div> <!-- /resume-header -->
 
-   		<div class="col-twelve">
+   		<div style="text-align: center;" class="col-twelve">
 
-   			<div class="timeline-wrap">
+   			<div style="text-align: justify;" class="timeline-wrap">
 
    				<div class="timeline-block">
 
@@ -303,29 +305,68 @@
 
 	   			</div> <!-- /timeline-block -->
 
-	   			<div class="timeline-block">
 
-	   				<div class="timeline-ico">
-	   					<i class="fa fa-graduation-cap"></i>
-	   				</div>
+			   </div> <!-- /timeline-wrap --> 
+			   <div>		
+			   <h1>Külföldi tanulmányok</h1>
+			   <div style="text-align: justify;" class="timeline-wrap">
 
-	   				<div class="timeline-header">
-	   					<h3>Jourdanton High School</h3>
-	   					<p>x - x</p>
-	   				</div>
+				<div class="timeline-block">
 
-	   				<div class="timeline-content">
-	   					<h4>:(</h4>
-	   					<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
-	   				</div>
+					<div class="timeline-ico">
+						<i class="fa fa-graduation-cap"></i>
+					</div>
 
-	   			</div> <!-- /timeline-block -->
+					<div class="timeline-header">
+						<p class="bottomless">Németország</p>
+						<h3>Georg-Hummel-Mittelschule</h3>
+						<p class="bottomless">2015 június - 2015 július</p>
+						<p>Moosburg an der Isar</p>
+					</div>
 
-   			</div> <!-- /timeline-wrap -->   			
+					<div class="timeline-content">
+						<h4>Németország - 8 hetes csereprogram (5. osztály)</h4>
+						<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
+					</div>
 
+				</div> <!-- /timeline-block -->
+
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-graduation-cap"></i>
+					</div>
+
+					<div class="timeline-header">
+						<p class="bottomless">Amerikai Egyesült Államok</p>
+						<h3>FLEX</h3>
+						<p class="bottomless" style="text-decoration: line-through;">2020 - 2021</p>
+						<p>Az egézségügyi helyzetre való tekintettel bizonytalan ideig halasztva</p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>Teljes tanév egy helyi középiskolában</h4>
+						<p>Az Amerikai Külügyminisztérium által finanszírozott Future Leaders Exchange Program (FLEX) egy pályázat alapú ösztöndíj program.
+							Több fordulós szelekció után a többszáz jelentkezőből 13-an nyerték meg a díjat és váltak Finalist-á. A program családoknál helyez el kint és a diákoknak szinte semmilyen saját költsége nincsen. 
+							A 13 nyertes között voltam a 2020/2021-es tanévre én is.
+							Sajnálatos módon azonban az augusztusi kiutazást bizonytalan ideig elhalasztották, a <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"> COVID-19 pandémia </a> miatt. Így egyelőre legalább 2020 végéig itthon folytatom tanulmányaimat és munkáimat.
+
+						</p>
+						<p style="font-size: 13px;">Figyelem, a paragrafus a COVID-19-ről tesz említést! <a class="important" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">Tájékozódjon hiteles forrásból!</a></p>
+					</div>
+
+				</div> <!-- /timeline-block -->
+
+				
+
+			</div>
+
+			   
+			</div>	
    		</div> <!-- /col-twelve -->
    		
-   	</div> <!-- /resume-timeline -->
+	   </div> <!-- /resume-timeline -->
+	   
    	
   <!--	<div class="row resume-timeline">
 
@@ -412,7 +453,10 @@
    			<h5>Portfolio</h5>
    			<h1>Munkáim</h1>
 
-   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+   			<p class="lead">
+				   Már 15 évesen vállaltam kisebb munkákat iskolai szünetekben. 
+				   <br>16 évesen pedig már iskola melett, délutánonként is dolgoztam.
+			   </p>
 
    		</div>   		
    	</div> <!-- /section-intro--> 
@@ -426,13 +470,13 @@
 
 	         	<div class="bgrid folio-item">
 	               <div class="item-wrap">
-	               	<img src="images/portfolio/liberty.jpg" alt="Liberty">
+	               	<img src="images/portfolio/webdesign.jpg" alt="Liberty">
 	                  <a href="#modal-01" class="overlay">	                  	           
 	                     <div class="folio-item-table">
 	                     	<div class="folio-item-cell">
-		     					       <h3 class="folio-title">Liberty</h3>	     					    
+		     					       <h3 class="folio-title">Web Design</h3>	     					    
 		     					    	 <span class="folio-types">
-		     					       	  Graphic Design
+		     					       	  Honlapkészítés
 		     					       </span>
 		     					   </div>	                      	
 	                     </div>                    
@@ -440,15 +484,15 @@
 	               </div>	               
 	        		</div> <!-- /folio-item -->
 
-	        		<div class="bgrid folio-item">
+	        		<div style="margin-top: 50px;" class="bgrid folio-item">
 	               <div class="item-wrap">
-	               	<img src="images/portfolio/shutterbug.jpg" alt="Shutterbug">
+	               	<img src="images/portfolio/appdevelopment.jpg" alt="Shutterbug">
 	               	<a href="#modal-02" class="overlay">              		                  
 	                     <div class="folio-item-table">
 	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Shutterbug</h3>	     					    
+	                     		<h3 class="folio-title">Alkalmazás fejlesztés</h3>	     					    
 		     					    	<span class="folio-types">
-		     					       	  Web Design
+		     					       	  
 		     					      </span>		     		
 		     					   </div> 	                      	
 	                     </div>                    
@@ -456,88 +500,30 @@
 	               </div>
 	        		</div> <!-- /folio-item -->
 
-	            <div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/clouds.jpg"alt="Clouds">
-	                  <a href="#modal-03" class="overlay">             		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Clouds</h3>	     					    
-		     					    	<span class="folio-types">
-		     					       	  Web Design
-		     					      </span>		     		
-		     					   </div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->
-
-	            <div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/beetle.jpg" alt="Beetle">
-	                  <a href="#modal-04" class="overlay">                  	                 
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Beetle</h3>	     					    
-		     					    	<span class="folio-types">
-		     					       	  Branding
-		     					      </span>		     		
-		     					   </div>  	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->     
-
-	        		<div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/lighthouse.jpg" alt="Lighthouse">
-	                  <a href="#modal-05" class="overlay">             		                  
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Lighthouse</h3>	     					    
-		     					    	<span class="folio-types">
-		     					       	  Web Development
-		     					      </span>		     		
-		     					   </div> 	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->
-
-	            <div class="bgrid folio-item">
-	               <div class="item-wrap">
-	               	<img src="images/portfolio/salad.jpg" alt="Salad">
-	                  <a href="#modal-06" class="overlay">
-	                     <div class="folio-item-table">
-	                     	<div class="folio-item-cell">
-	                     		<h3 class="folio-title">Salad</h3>	     					    
-		     					    	<span class="folio-types">
-		     					       	  Branding
-		     					      </span>		     		
-		     					   </div>	                      	
-	                     </div>                    
-	                  </a>
-	               </div>
-	        		</div> <!-- /folio-item -->   
+	            
 
 	            <!-- modal popups - begin
 	            ============================================================= -->
 	            <div id="modal-01" class="popup-modal slider mfp-hide">	
 
 				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-liberty.jpg" alt="" />
+				     		<img src="images/portfolio/webdesign.jpg" alt="" />
 				     	</div>      	
 
 					   <div class="description-box">
-					      <h4>Liberty</h4>		      
-					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+					      <h4>Honlapkészítés</h4>		      
+					      <p class="sorkizart">Már 12 éves korom óta csinálok honlapokat, akkor persze még csak saját magam szórakoztatására.
+							  Első "megrendelésem" egy család tagom vállalkozásától érkezett, majd ezt még számos követte.
+							  Teljes körű szolgáltatást nyújtok, domain és hosting ügyintézést is vállalok, utóbbit akár ingyen
+							  statikus honlapok esetén.
+						  </p>
 
-					      <div class="categories">Web Development</div>			               
+					      <div class="categories">Web Design</div>			               
 					   </div>
 
 			         <div class="link-box">
-			            <a href="http://www.behance.net">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
+			            <!-- <a href="http://www.behance.net">Details</a> -->
+						  <a href="#" class="popup-modal-dismiss">Bezár</a>
 			         </div>		      
 
 				   </div> <!-- /modal-01 -->
@@ -545,110 +531,36 @@
 				   <div id="modal-02" class="popup-modal slider mfp-hide">	
 
 				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-shutterbug.jpg" alt="" />
+							 <img src="images/portfolio/appdevelopment.jpg" alt="" />
 				     	</div>      	
 
 					   <div class="description-box">
-					      <h4>Shutterbug</h4>		      
-					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+					      <h4>Alkalmazás fejlesztés</h4>		      
+					      <p class="sorkizart">Már akkor elkezdett érdekelni az alkalmazás fejlesztés, mikor megkaptam az első okos telefonom,
+							  néhány osztálytársammal létrehoztunk egy "céget", mely Androidra fejlesztett alkalmazásokat. Első termékünk
+							  egy QR kód leolvasó volt,
+							  azóta készítettünk chat alkalmazást, böngészőt, játékokat és még egy képfelismerő appot is fejlesztettünk
+							  közepes sikerrel. A Google Play áruházban az alkalmazások némelyike még mindig elérhető.
+						  </p>
 
 					      <div class="categories">Web Design</div>			               
 					   </div>
 
 			         <div class="link-box">
-			            <a href="http://www.behance.net">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
+			            <!-- <a href="http://www.behance.net">Details</a> -->
+						  <a href="#" class="popup-modal-dismiss">Bezár</a>
 			         </div>		      
 
 				   </div> <!-- /modal-02 -->
-
-				   <div id="modal-03" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-clouds.jpg" alt="" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Clouds</h4>		      
-					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-
-					      <div class="categories">Web Design</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="http://www.behance.net">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				   </div> <!-- /modal-03 -->
-
-				   <div id="modal-04" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-beetle.jpg" alt="" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Beetle</h4>		      
-					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-
-					      <div class="categories">Branding</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="http://www.behance.net">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				   </div> <!-- /modal-04 -->
-
-				   <div id="modal-05" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Lighthouse</h4>		      
-					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-
-					      <div class="categories">Web Development</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="http://www.behance.net">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				   </div> <!-- /modal-05 -->
-
-				   <div id="modal-06" class="popup-modal slider mfp-hide">	
-
-				     	<div class="media">
-				     		<img src="images/portfolio/modals/m-salad.jpg" alt="" />
-				     	</div>      	
-
-					   <div class="description-box">
-					      <h4>Salad</h4>		      
-					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-
-					      <div class="categories">Branding</div>			               
-					   </div>
-
-			         <div class="link-box">
-			            <a href="http://www.behance.net">Details</a>
-					      <a href="#" class="popup-modal-dismiss">Close</a>
-			         </div>		      
-
-				   </div> <!-- /modal-06 -->
-
 
 				   <!-- modal popups - end
 	            ============================================================= -->
 
 	         </div> <!-- /portfolio-wrapper --> 
 
-   		</div>  <!-- /twelve -->   
+		   </div>  <!-- /twelve -->   
+		   
+		   
 
    	</div> <!-- /portfolio-content --> 
 		
@@ -657,29 +569,7 @@
 
 	<!-- CTA Section
    ================================================== -->
-	<section id="cta" class="grey-section">
-
-   	<div class="row cta-content">
-
-   		<div class="col-twelve section-ads">  
-
-	     		<h2 class="h01"><a href="http://koda.best/kodastudios">Koda Studios</a></h2>
-
-		      <p class="lead">
-		      Studióm, a <a href="http://koda.best/kodastudios"><span>Koda Studios</span></a>.
-				nagyon <span>király</span> studió <span>ma</span>. 
-				<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. -->	
-				</p>
-
-				<div class="action">
-			      <a class="button button-primary large" href="http://koda.best/kodastudios">MEGNÉZEM</a>
-		      </div>		     	
-
-   		</div>
-
-   	</div> <!-- /cta-content -->
-
-   </section> <!-- /cta --> 
+	
 
 	
 	<!-- services Section
@@ -694,7 +584,9 @@
    			<h5>Szolgáltatások</h5>
    			<h1>Mit tehetek Önért?</h1>
 
-   			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+   			<p class="lead">A korábbi munkáimból is látható, hogy sok különböző dologgal foglalkozom, alább áttekintheti, hogy miben lehetek
+				   Önnek segítségére.
+			   </p>
 
    		</div>   		
    	</div> <!-- /section-intro -->
@@ -807,6 +699,8 @@
 		<div class="row">
 			<div class="col-twelve">
 
+				<h1 style="color: white;">Több mint</h1>
+
 				<div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
 
 					<div class="bgrid stat">
@@ -816,11 +710,11 @@
 						</div>
 
 						<h3 class="stat-count">
-							1000
+							10000
 						</h3>
 
 						<h5 class="stat-title">
-							-nél is több óra tanulással töltve
+							óra tanulással töltve.
 						</h5>
 
 					</div> <!-- /stat -->					
@@ -832,11 +726,11 @@
 						</div>
 
 						<h3 class="stat-count">
-							100
+							99
 						</h3>
 
 						<h5 class="stat-title">
-							Közeli ismerős
+							% királyság
 						</h5>
 
 					</div> <!-- /stat -->
@@ -848,11 +742,11 @@
 						</div>
 
 						<h3 class="stat-count">
-							10
+							25
 						</h3>
 
 						<h5 class="stat-title">
-							Díj
+							Díj és elismerés
 						</h5>
 
 					</div> <!-- /stat -->									
@@ -864,11 +758,11 @@
 						</div>
 
 						<h3 class="stat-count">
-							100000
+							1000
 						</h3>
 
 						<h5 class="stat-title">
-							+ Ötlet
+							ötlet
 						</h5>
 
 					</div> <!-- /stat -->
@@ -999,8 +893,8 @@
 
    			<h5>Email</h5>
 
-   			<p>someone@example.com<br>
-			   	info@example.com			     
+   			<p>v.kadosa@gmail.com<br>
+			   	info@kadosavarga.xyz			     
 			   </p>
 
    		</div>
@@ -1012,10 +906,7 @@
    			</div>
 
    			<h5>Hívjon</h5>
-
-   			<p>Phone: (+11) 00000000<br>
-			   	Mobile: (+12) 555 0100<br>
-			     	Fax: (+13) 555 0101
+			   		Mobil: +36702892666
 			   </p>
 
    		</div>
