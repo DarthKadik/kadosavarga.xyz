@@ -414,11 +414,11 @@ textarea {
 	margin-right: -20px;
 }
 
-[class*="col-"],
+/*[class*="col-"],
 .bgrid {
 	float: left;
 }
-
+*/
 [class*="col-"] + [class*="col-"].end {
 	float: right;
 }
@@ -441,11 +441,11 @@ textarea {
 	width: 25%;
 }
 
-.col-four,
+/* .col-four,
 .col-1-3 {
 	width: 33.33333%;
 }
-
+*/
 .col-five {
 	width: 41.66667%;
 }
