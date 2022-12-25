@@ -109,6 +109,10 @@ a:hover {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
+.hideIfSmall {
+  display: none;
+}
+
 @media (max-width: 900px) {
   /* Add styles for small screens */
   body {
@@ -132,6 +136,9 @@ a:hover {
   body {
     overflow:scroll;
   }
+  .hideIfSmall {
+    display: block;
+  }
 }
 
 
@@ -144,8 +151,9 @@ a:hover {
       var name = document.getElementById("name-input").value;
       // Update the text on top of the image with the user's name
       document.getElementById("image-container").style.opacity = 1; 
-      document.getElementById("image-text").style.opacity = 1; 
+      document.getElementById("image-text").style.opacity = 1;
       document.getElementById("image-text").innerHTML = "Merry Christmas " + name + "!";
+      document.getElementById("toHide").style.display = "none";
     }
   </script>
 </head>
@@ -195,9 +203,12 @@ a:hover {
           </div>
         </div>
     
+  <p class="hideIfSmall">
+   Sorry, this site is not optimized for mobile devices.
+  </p>
   <h1>Merry Christmas!</h1>
   <!-- Add an input field and a button for the user to enter their name -->
-  <p>
+  <p id="toHide">
     Enter your name: <input type="text" id="name-input">
     <button onclick="updateName()">Update</button>
   </p>
@@ -212,7 +223,7 @@ a:hover {
     Please, consider helping Koda offset his CO2 emission and thus helping the world.
   </p>
   <p>
-    <a href="https://en.wikipedia.org/wiki/Christmas" target="_blank">Learn more about carbon offset.</a>
+    <a href="https://forms.gle/2VErVydyCoafTAf39" target="_blank">Learn more about carbon offset.</a>
   </p>
   
 
