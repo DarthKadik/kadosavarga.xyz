@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Merry Christmas!</title>
+  <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap'); 
+  </style>
+  <style>
+    /* Add some custom styles for the webpage */
+    body {
+      overflow: hidden;
+      background-color: #212121;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 500;
+      color: #fff;
+      margin: 32px 0 16px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #bdbdbd;
+      margin: 8px 0;
+    }
+
+    /* Add a custom style for the input field and button */
+    .name-input {
+      display: flex;
+      align-items: center;
+      margin: 16px 0;
+    }
+
+    input[type="text"] {
+      flex: 1;
+      height: 48px;
+      padding: 0 16px;
+      border: none;
+      border-radius: 4px 0 0 4px;
+      box-sizing: border-box;
+      font-size: 16px;
+      color: #bdbdbd;
+      background-color: #424242;
+      outline: none;
+    }
+
+    button {
+      height: 48px;
+      padding: 0 16px;
+      border: none;
+      border-radius: 0 4px 4px 0;
+      box-sizing: border-box;
+      font-size: 16px;
+      font-weight: 500;
+      color: white;
+      background-color: #e53935;
+      cursor: pointer;
+      outline: none;
+    }
+
+    /* Add a custom style for the text on top of the image */
+    #image-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      /*transform: translate(-50%, -50%);*/
+      color: white;
+      font-size: 32px;
+      text-align: center;
+      /* Add a transition effect for the text */
+      transition: all 2s ease-in-out;
+      /* Add an initial style for the text */
+      opacity: 0;
+      position: absolute;
+      top: 5%;
+      left: 5%;
+      color:#e53935;
+    }
+
+ 
+
+    /* Add a custom style for the image container */
+.image-container {
+
+
+  opacity: 0;
+  font-family: 'Dancing Script', cursive;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(to right, rgb(92, 2, 2), rgb(184, 0, 31));
+  border: 1px solid rgb(3, 149, 20);
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(242, 246, 40, 0.2);
+  transition: transform 0.2s;
+}   
+
+a:hover {
+  color: rgb(92, 2, 2);
+  background: linear-gradient(to right, rgb(6, 112, 5), rgb(59, 226, 9));
+  transform: scale(1.1);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 900px) {
+  /* Add styles for small screens */
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 12px;
+  }
+  input[type="text"] {
+    width: 100%;
+  }
+  .name-input {
+    flex-direction: column;
+  }
+  input[type="text"] {
+    margin-bottom: 8px;
+  }
+  body {
+    overflow:scroll;
+  }
+}
+
+
+
+  </style>
+
+  <script>
+    function updateName() {
+      // Get the user's name from the input field
+      var name = document.getElementById("name-input").value;
+      // Update the text on top of the image with the user's name
+      document.getElementById("image-container").style.opacity = 1; 
+      document.getElementById("image-text").style.opacity = 1; 
+      document.getElementById("image-text").innerHTML = "Merry Christmas " + name + "!";
+    }
+  </script>
+</head>
+<body>
+    <!-- SNIPPET START -->
+    <style>
+        /* customizable snowflake styling */
+        .snowflake {
+          color: #fff;
+          font-size: 1em;
+          font-family: Arial;
+          text-shadow: 0 0 1px #000;
+        }
+    
+        @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+        </style>
+        <div class="snowflakes" aria-hidden="true">
+          <div class="snowflake">
+          ❄
+          </div>
+          <div class="snowflake">
+          ❅
+          </div>
+          <div class="snowflake">
+          ❆
+          </div>
+          <div class="snowflake">
+          ❄
+          </div>
+          <div class="snowflake">
+          ❅
+          </div>
+          <div class="snowflake">
+          ❆
+          </div>
+          <div class="snowflake">
+          ❄
+          </div>
+          <div class="snowflake">
+          ❅
+          </div>
+          <div class="snowflake">
+          ❆
+          </div>
+          <div class="snowflake">
+          ❄
+          </div>
+        </div>
+    
+  <h1>Merry Christmas!</h1>
+  <!-- Add an input field and a button for the user to enter their name -->
+  <p>
+    Enter your name: <input type="text" id="name-input">
+    <button onclick="updateName()">Update</button>
+  </p>
+  <!-- Add a container for the image and the text on top of it -->
+  <div class="image-container" id="image-container" style="position: relative; width: 50%; text-align: center; margin: auto;  justify-content: center;
+  align-items: center;">
+    <img src="kodaChristmas.jpg" alt="Christmas tree" style= "width: 100%;">
+    <!-- Add a placeholder for the text on top of the image -->
+    <div id="image-text" class="image-text">[Your name here]</div>
+  </div>
+  <p>
+    Please, consider helping Koda offset his CO2 emission and thus helping the world.
+  </p>
+  <p>
+    <a href="https://en.wikipedia.org/wiki/Christmas" target="_blank">Learn more about carbon offset.</a>
+  </p>
+  
+
+  <!-- Add a script to update the text on top of the image with the user's name -->
+  </body>
+</html>
