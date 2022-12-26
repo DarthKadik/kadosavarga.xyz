@@ -113,6 +113,10 @@ a:hover {
   display: none;
 }
 
+#toShow {
+  display: none;
+}
+
 @media only screen and (orientation: portrait) {
   /* Add styles for small screens */
   body {
@@ -154,6 +158,7 @@ a:hover {
       document.getElementById("image-text").style.opacity = 1;
       document.getElementById("image-text").innerHTML = "Merry Christmas " + name + "!";
       document.getElementById("toHide").style.display = "none";
+      document.getElementById("toShow").style.display = "block";
     }
   </script>
 </head>
@@ -209,8 +214,8 @@ a:hover {
   <h1>Merry Christmas!</h1>
   <!-- Add an input field and a button for the user to enter their name -->
   <p id="toHide">
-    Enter your name: <input type="text" id="name-input">
-    <button onclick="updateName()">Update</button>
+    <input type="text" id="name-input" placeholder="Name">
+    <button onclick="updateName()">Generate my card</button>
   </p>
   <!-- Add a container for the image and the text on top of it -->
   <div class="image-container" id="image-container" style="position: relative; width: 50%; text-align: center; margin: auto;  justify-content: center;
@@ -219,13 +224,14 @@ a:hover {
     <!-- Add a placeholder for the text on top of the image -->
     <div id="image-text" class="image-text">[Your name here]</div>
   </div>
+  <div id="toShow">
   <p>
-    Please, consider helping Koda offset his CO2 emission and thus helping the world.
+    If you want to you can also consider helping Koda offset his CO2 emission and simultaneously help the world.
   </p>
   <p>
     <a href="https://forms.gle/2VErVydyCoafTAf39" target="_blank">Learn more about carbon offset.</a>
   </p>
-  
+</div>
 
   <!-- Add a script to update the text on top of the image with the user's name -->
   </body>
