@@ -4,7 +4,7 @@
   height: auto;
   display: flex;
   min-height: 100vh;
-  overflow-x: auto;
+  overflow-x: clip;
   align-items: center;
   flex-direction: column;
   background-color: #111111;
@@ -1099,8 +1099,22 @@
   .home-about-11 {
     width: 100%;
   }
+
+  .home-text018 {
+    font-size: 48px;
+  }
+   
+  .home-text019 {
+      font-size: 32px;
+  }
+
+  .home-text057 {
+    font-size: 32px;
+  }
+
   .home-text097 {
     text-align: center;
+    font-size: 48px;
   }
   .home-container16 {
     padding-left: var(--dl-space-space-tripleunit);
