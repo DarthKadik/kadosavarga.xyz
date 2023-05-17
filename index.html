@@ -1,73 +1,570 @@
 <!DOCTYPE html>
-<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html class="no-js" lang="en">
-<!--<![endif]-->
+<html lang="en">
+  <head>
+    <title>Portfolio Page</title>
+    <meta property="og:title" content="Portfolio Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
 
-<head>
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Arial;
+        font-size: 16px;
+      }
 
-	<meta charset="utf-8">
-	<title>Teringettét!</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.55;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
 
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="public/playground_assets/kodashowcover1wotextorbg.png"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./home.css" rel="stylesheet" />
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/vendor.css">
-	<link
-		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"
-		rel="stylesheet">
-
-
-	<script src="js/modernizr.js"></script>
-	<script src="js/pace.min.js"></script>
-
-
-	<link rel="icon" type="image/png" href="favicon.png">
-	
-	<style>
-		div.intro-overlay {
-			overflow: hidden;
-		}
-	</stlye>
-
-</head>
-
-<body id="top">
-
-<style>
-	#intro {
-	background: #151515 url(../images/no.gif) no-repeat center;
-	overflow: hidden;	
-}
-</style>
-	<section id="intro">
-
-		<div class="intro-overlay"></div>
-
-		<div class="intro-content">
-			<div class="row">
-
-				<div class="col-twelve">
-
-					<h5>Oh snap!</h5>
-					<h1>Koda is updating his website. Please look back later!</h1>
-
-					<a style="color: #ffffff" href="https://www.linkedin.com/in/kadosa-varga-915b68180/">In the meantime click here to go to his LinkedIn page!</a>
-
-				</div>
-
-			</div>
-		</div>
-
-	</section>
-
-
-</body>
-
+      <div class="home-container">
+        <div data-role="Header" class="home-navbar-container">
+          <div class="home-navbar">
+            <a href="#openingHeader" class="home-heading">KV</a>
+            <div class="home-links-container">
+              <a href="#aboutMe" class="home-link Navbar-Link">About</a>
+              <a href="#experiences" class="home-link01 Navbar-Link">
+                Experience
+              </a>
+              <a href="#achievements" class="home-link02 Navbar-Link">
+                Achievements
+              </a>
+              <a href="#contactMe" class="home-link03 Navbar-Link">Contact</a>
+            </div>
+            <div data-role="BurgerMenu" class="home-burger-menu">
+              <svg viewBox="0 0 1024 1024" class="home-icon">
+                <path
+                  d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
+                ></path>
+              </svg>
+            </div>
+            <div data-role="MobileMenu" class="home-mobile-menu">
+              <div class="home-container01">
+                <span class="Card-Heading home-heading1">Logo</span>
+                <div data-role="CloseMobileMenu" class="home-close-menu">
+                  <svg viewBox="0 0 1024 1024" class="home-icon02">
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="home-links-container1">
+                <span class="home-link04 Navbar-Link">About</span>
+                <span class="home-link05 Navbar-Link">Experience</span>
+                <span class="home-link06 Navbar-Link">Portofolio</span>
+                <span class="Navbar-Link">Contact</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-section-separator"></div>
+        <div class="home-section-separator1"></div>
+        <div class="home-container02">
+          <div class="home-container03"></div>
+          <div id="openingHeader" class="home-hero">
+            <div class="home-hero-text-container">
+              <h1 class="home-heading2">
+                <span>Hi!</span>
+                <br />
+                <span>My name is</span>
+                <br />
+                <span>Kadosa,</span>
+                <br />
+              </h1>
+              <h1 class="home-heading3">
+                <span>Kadosa</span>
+                <br />
+                <span>Varga</span>
+                <br />
+              </h1>
+              <div class="home-cta-btn-container"></div>
+            </div>
+            <img
+              alt="image"
+              src="public/playground_assets/img_20230319_152508-500h.jpg"
+              class="home-image"
+            />
+          </div>
+        </div>
+        <div id="aboutMe" class="home-features">
+          <div class="home-heading-container">
+            <h2 class="home-text010 Section-Heading">WHO AM I?</h2>
+            <span class="home-text011">
+              An aspiring university student with a passion for exploring the
+              world and connecting with people.
+            </span>
+          </div>
+          <div class="home-cards-container">
+            <div class="home-card">
+              <div class="home-icon-container">
+                <svg viewBox="0 0 1024 1024" class="home-icon04">
+                  <path
+                    d="M512 0c-282.77 0-512 229.23-512 512s229.23 512 512 512 512-229.23 512-512-229.23-512-512-512zM512 960.002c-62.958 0-122.872-13.012-177.23-36.452l233.148-262.29c5.206-5.858 8.082-13.422 8.082-21.26v-96c0-17.674-14.326-32-32-32-112.99 0-232.204-117.462-233.374-118.626-6-6.002-14.14-9.374-22.626-9.374h-128c-17.672 0-32 14.328-32 32v192c0 12.122 6.848 23.202 17.69 28.622l110.31 55.156v187.886c-116.052-80.956-192-215.432-192-367.664 0-68.714 15.49-133.806 43.138-192h116.862c8.488 0 16.626-3.372 22.628-9.372l128-128c6-6.002 9.372-14.14 9.372-22.628v-77.412c40.562-12.074 83.518-18.588 128-18.588 70.406 0 137.004 16.26 196.282 45.2-4.144 3.502-8.176 7.164-12.046 11.036-36.266 36.264-56.236 84.478-56.236 135.764s19.97 99.5 56.236 135.764c36.434 36.432 85.218 56.264 135.634 56.26 3.166 0 6.342-0.080 9.518-0.236 13.814 51.802 38.752 186.656-8.404 372.334-0.444 1.744-0.696 3.488-0.842 5.224-81.324 83.080-194.7 134.656-320.142 134.656z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="home-content-container">
+                <span class="home-heading4 Card-Heading">Internationalism</span>
+                <span class="home-text012">
+                  <span class="Card-Text">
+                    I'm driven by a deep passion for internationalism.
+                  </span>
+                  <span class="Card-Text">
+                    &nbsp;I've lived and studied in four countries, embracing
+                    diverse cultures and perspectives. Through active
+                    participation in international exchanges and collaborations,
+                    I strive for global solutions and meaningful connections.
+                  </span>
+                  <span></span>
+                </span>
+              </div>
+            </div>
+            <div class="home-card1">
+              <div class="home-icon-container1">
+                <svg viewBox="0 0 1152 1024" class="home-icon06">
+                  <path
+                    d="M1088 901.166c0 45.5 26.028 84.908 64 104.184v15.938c-10.626 1.454-21.472 2.224-32.5 2.224-68.008 0-129.348-28.528-172.722-74.264-26.222 6.982-54.002 10.752-82.778 10.752-159.058 0-288-114.616-288-256s128.942-256 288-256c159.058 0 288 114.616 288 256 0 55.348-19.764 106.592-53.356 148.466-6.824 14.824-10.644 31.312-10.644 48.7zM230.678 221.186c-66.214 53.798-102.678 122.984-102.678 194.814 0 40.298 11.188 79.378 33.252 116.15 22.752 37.92 56.982 72.586 98.988 100.252 30.356 19.992 50.78 51.948 56.176 87.894 1.8 11.984 2.928 24.088 3.37 36.124 7.47-6.194 14.75-12.846 21.88-19.976 24.154-24.152 56.78-37.49 90.502-37.49 5.368 0 10.762 0.336 16.156 1.024 20.948 2.662 42.344 4.016 63.594 4.020v128c-27.128-0.002-53.754-1.738-79.742-5.042-109.978 109.978-241.25 129.7-368.176 132.596v-26.916c68.536-33.578 128-94.74 128-164.636 0-9.754-0.758-19.33-2.164-28.696-115.796-76.264-189.836-192.754-189.836-323.304 0-229.75 229.23-416 512-416 278.458 0 504.992 180.614 511.836 405.52-41.096-18.316-85.84-29.422-132.262-32.578-11.53-56.068-45.402-108.816-98.252-151.756-35.322-28.698-76.916-51.39-123.628-67.444-49.706-17.080-102.76-25.742-157.694-25.742-54.932 0-107.988 8.662-157.694 25.742-46.712 16.054-88.306 38.744-123.628 67.444z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="home-content-container1">
+                <span class="home-heading5 Card-Heading">Communication</span>
+                <span class="home-text016 Card-Text">
+                  I have a strong emphasis on effective communication in my
+                  personal and proffesional life. Through tutoring, public
+                  speaking, and presenting experiences, I've developed the art
+                  of conveying complex concepts clearly and tailoring my
+                  approach to individuals.
+                </span>
+              </div>
+            </div>
+            <div class="home-card2">
+              <div class="home-icon-container2">
+                <svg viewBox="0 0 1022.8297142857142 1024" class="home-icon08">
+                  <path
+                    d="M922.857 0c52 0 100 38.857 100 93.143 0 30.286-12 59.429-25.714 86.286-44.571 84.571-194.286 364-265.714 429.714-34.857 32.571-76 52-124.571 52-96.571 0-175.429-82.286-175.429-178.286 0-45.714 18.857-90.286 52.571-121.143l364.571-330.857c20-18.286 46.286-30.857 74.286-30.857zM403.429 590.857c29.714 57.714 84 101.143 146.857 117.714l0.571 40.571c3.429 162.857-109.714 274.857-273.143 274.857-193.714 0-277.714-154.286-277.714-329.714 21.143 14.286 94.857 73.143 118.857 73.143 14.286 0 26.286-8 31.429-21.143 48.571-126.857 124.571-149.714 253.143-155.429z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="home-content-container2">
+                <span class="home-heading6 Card-Heading">Creativity</span>
+                <span class="home-text017 Card-Text">
+                  Boundless creativity fuels me as I delve into a range of
+                  pursuits, from graphic design to problem-solving
+                  projects,&nbsp;Constantly seeking innovative solutions and
+                  avenues to bring ideas to life, this creative drive satisfies
+                  my desire to inspire and make a lasting impact.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="experiences" class="home-about">
+          <div class="home-max-content-width-container">
+            <div class="home-heading-container1">
+              <h1 class="home-text018">PROFESSIONAL EXPERIENCES</h1>
+            </div>
+            <div class="home-content-container3">
+              <div class="home-about-1">
+                <div class="home-heading-container2">
+                  <h1 class="home-text019">
+                    <span>JOBS</span>
+                    <br />
+                  </h1>
+                </div>
+                <div class="home-container04">
+                  <svg viewBox="0 0 1024 1024" class="home-icon10">
+                    <path
+                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
+                    ></path>
+                  </svg>
+                  <span class="home-text022">
+                    <span class="Section-Text">
+                      Logiscool | Tutor, Curriculum Supervisor
+                    </span>
+                    <br />
+                    <span class="Card-Text">05/2019 – 06/2021</span>
+                    <br />
+                    <br class="Card-Text" />
+                    <span class="Card-Text"></span>
+                    <span class="Card-Text">
+                      Educator in Programming and IT Skills for children aged
+                      8-18, with a focus on inclusive education for children
+                      with disabilities.
+                    </span>
+                    <br />
+                    <br class="Card-Text" />
+                    <span class="Card-Text">
+                      Developed and implemented curriculums for programming and
+                      IT education for children.
+                    </span>
+                    <br />
+                    <br class="Card-Text" />
+                  </span>
+                </div>
+                <div class="home-container05">
+                  <svg viewBox="0 0 1024 1024" class="home-icon12">
+                    <path
+                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
+                    ></path>
+                  </svg>
+                  <span class="home-text035">
+                    <span class="Section-Text">
+                      FLEX Program | Outreach Specialist
+                    </span>
+                    <br />
+                    <span class="Card-Text">06/2022 –</span>
+                    <br />
+                    <br class="Card-Text" />
+                    <span class="Card-Text">
+                      As a US Alumni works with American Councils and the US
+                      Embassy of Budapest on campaigns promoting US Exchange
+                      programs and other State Department projects.
+                    </span>
+                    <br />
+                    <br class="Card-Text" />
+                  </span>
+                </div>
+                <div class="home-container06">
+                  <svg viewBox="0 0 1024 1024" class="home-icon14">
+                    <path
+                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
+                    ></path>
+                  </svg>
+                  <span class="home-text044">
+                    <span class="Section-Text">
+                      FINA | Operations Optimization
+                    </span>
+                    <br class="Card-Text" />
+                    <span class="Card-Text">06/2022</span>
+                    <br class="Card-Text" />
+                    <br class="Card-Text" />
+                    <span class="Card-Text">
+                      Responsible for the smooth operations at 19th FINA World
+                      Championships.
+                    </span>
+                    <br />
+                    <br class="Card-Text" />
+                    <span class="Card-Text">
+                      Communication contact between FINA and the organizers.
+                    </span>
+                    <br />
+                    <br class="Card-Text" />
+                    <span class="Card-Text">
+                      Ensured that VIP guests had an exceptional experience.
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <div class="home-about-11">
+                <div class="home-heading-container3">
+                  <h1 class="home-text057">
+                    <span>OTHER</span>
+                    <br />
+                  </h1>
+                </div>
+                <div class="home-container07">
+                  <svg viewBox="0 0 1024 1024" class="home-icon16">
+                    <path
+                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
+                    ></path>
+                  </svg>
+                  <span class="home-text060">
+                    <span class="Section-Text">
+                      Future Leaders Exchange (FLEX) | USA
+                    </span>
+                    <br class="Section-Text" />
+                    <span class="Card-Text">2021-2022</span>
+                    <br class="Card-Text" />
+                    <br class="Card-Text" />
+                    <span class="Card-Text">
+                      Highly competitive scholarship program of the US State
+                      Department for high school students. Cultivates and
+                      enhances the leadership skills of participants.
+                    </span>
+                    <br class="Card-Text" />
+                    <span class="Card-Text"></span>
+                  </span>
+                </div>
+                <div class="home-container08">
+                  <svg viewBox="0 0 1024 1024" class="home-icon18">
+                    <path
+                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
+                    ></path>
+                  </svg>
+                  <span class="home-text069">
+                    <span class="Section-Text">
+                      Civil Education Workshop | Washington, DC.
+                    </span>
+                    <br class="Section-Text" />
+                    <span class="Card-Text">January, 2022</span>
+                    <br class="Card-Text" />
+                    <br class="Card-Text" />
+                    <span class="Card-Text">
+                      The US State Department’s leadership conference for
+                      selected exchange students. Activities included meetings
+                      with State Department officials, Senators, activists, and
+                      community leaders. Intensive focus on citizenship,
+                      diplomacy, communication and leadership.
+                    </span>
+                    <br />
+                    <br class="Card-Text" />
+                  </span>
+                </div>
+                <div class="home-container09">
+                  <svg viewBox="0 0 1024 1024" class="home-icon20">
+                    <path
+                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
+                    ></path>
+                  </svg>
+                  <span class="home-text078">
+                    <span class="Section-Text">
+                      Preparing Global Leaders Forum | Virtual
+                    </span>
+                    <br class="Section-Text" />
+                    <span class="Card-Text">Spring, 2021</span>
+                    <br class="Card-Text" />
+                    <br class="Card-Text" />
+                    <span class="Card-Text">
+                      Program for young professionals and aspiring leaders from
+                      around the world. Aims to equip participants with the
+                      skills and knowledge necessary to become effective leaders
+                      in a global context, with a focus on promoting
+                      cross-cultural communication, diversity, and innovation.
+                    </span>
+                    <br />
+                    <br class="Card-Text" />
+                  </span>
+                </div>
+                <div class="home-container10">
+                  <svg viewBox="0 0 1024 1024" class="home-icon22">
+                    <path
+                      d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"
+                    ></path>
+                  </svg>
+                  <span class="home-text087">
+                    <span class="Section-Text">
+                      Budapest International Model United Nations
+                    </span>
+                    <br />
+                    <span class="Card-Text">2019</span>
+                    <br class="Card-Text" />
+                    <br class="Card-Text" />
+                    <span class="Card-Text">
+                      International student conference modeling the work of the
+                      United Nations.
+                    </span>
+                    <br />
+                    <br class="Card-Text" />
+                    <br class="Card-Text" />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <button class="home-button Anchor button">CHECK MY WORK</button>
+          </div>
+        </div>
+        <div class="home-section-separator2"></div>
+        <div id="achievements" class="home-clients">
+          <div class="home-heading-container4">
+            <h1 class="home-text097">Achievements</h1>
+            <span class="home-text098 Card-Text">
+              Awards, recognitions, scholarships and more.
+            </span>
+          </div>
+          <div class="home-logo-container">
+            <div class="home-container11">
+              <img
+                alt="image"
+                src="public/playground_assets/flexlogo-200h.png"
+                class="home-logo"
+              />
+              <span class="home-text099 Card-Text">
+                Selected for the highly competitive Future Leaders Exchange
+                Program and succesfuly completed it.
+              </span>
+            </div>
+            <div class="home-container12">
+              <img
+                alt="image"
+                src="public/playground_assets/logo-3-200h.png"
+                class="home-logo1"
+              />
+              <span class="home-text100 Card-Text">
+                Third place in the Stockexchange Game of the&nbsp;Central
+                European Broker Training Foundation (Közép-európai Brókerképző
+                alapítvány.
+              </span>
+            </div>
+            <div class="home-container13">
+              <img
+                alt="image"
+                src="public/playground_assets/uil-200h.png"
+                class="home-logo2"
+              />
+              <span class="home-text101 Card-Text">
+                Received the distinguished Scholar Award for my academic
+                excellence and active participation in various UIL events.
+              </span>
+            </div>
+            <div class="home-container14">
+              <img
+                alt="image"
+                src="public/playground_assets/bestoftexas-200h.png"
+                class="home-logo3"
+              />
+              <span>
+                <span class="Card-Text">
+                  Won the Current Issues contest. Received certificate of Top
+                  Senior in the State of Texas in Current Issues.
+                </span>
+                <br />
+              </span>
+            </div>
+            <div class="home-container15">
+              <img
+                alt="image"
+                src="public/playground_assets/stipi-200h.png"
+                class="home-logo4"
+              />
+              <span class="home-text105">
+                <span class="Card-Text">
+                  Received the Stipendium Peregrinum scholarship of the National
+                  Center of Talent of Hungary which enabled me to attend higher
+                  education in Finland.
+                </span>
+                <br />
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="home-section-separator3"></div>
+        <div class="home-section-separator4"></div>
+        <div class="home-section-separator5"></div>
+        <div class="home-subscribe">
+          <div id="contactMe" class="home-container16">
+            <div class="home-heading-container5">
+              <h1 class="home-text108 Section-Heading">Contact Me!</h1>
+            </div>
+            <input
+              type="text"
+              required="true"
+              placeholder="Name"
+              autocomplete="name"
+              class="home-textinput Section-Text input"
+            />
+            <input
+              type="email"
+              required="true"
+              placeholder="Email address"
+              autocomplete="email"
+              class="home-textinput1 Section-Text input"
+            />
+            <input
+              type="text"
+              required="true"
+              placeholder="Message"
+              autocomplete="off"
+              class="home-textinput2 Section-Text input"
+            />
+            <a
+              href="mailto:contact@kadosavarga.xyz?subject=Question"
+              class="home-link08 Anchor button"
+            >
+              SEND
+            </a>
+          </div>
+        </div>
+        <div class="home-section-separator6"></div>
+        <div class="home-footer-container">
+          <div class="home-footer">
+            <div class="home-social-links">
+              <a
+                href="https://www.linkedin.com/in/kadosa-varga/"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link09"
+              >
+                <svg viewBox="0 0 877.7142857142857 1024" class="home-icon24">
+                  <path
+                    d="M135.429 808h132v-396.571h-132v396.571zM276 289.143c-0.571-38.857-28.571-68.571-73.714-68.571s-74.857 29.714-74.857 68.571c0 37.714 28.571 68.571 73.143 68.571h0.571c46.286 0 74.857-30.857 74.857-68.571zM610.286 808h132v-227.429c0-121.714-65.143-178.286-152-178.286-70.857 0-102.286 39.429-119.429 66.857h1.143v-57.714h-132s1.714 37.143 0 396.571v0h132v-221.714c0-11.429 0.571-23.429 4-32 9.714-23.429 31.429-48 68-48 47.429 0 66.286 36 66.286 89.714v212zM877.714 237.714v548.571c0 90.857-73.714 164.571-164.571 164.571h-548.571c-90.857 0-164.571-73.714-164.571-164.571v-548.571c0-90.857 73.714-164.571 164.571-164.571h548.571c90.857 0 164.571 73.714 164.571 164.571z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="mailto:contact@kadosavarga.xyz?subject="
+                class="home-link10"
+              >
+                <svg viewBox="0 0 1024 1024" class="home-icon26">
+                  <path
+                    d="M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/koda_shoemaker/"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link11"
+              >
+                <svg viewBox="0 0 877.7142857142857 1024" class="home-icon28">
+                  <path
+                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <div class="home-copyright-container">
+              <svg viewBox="0 0 1024 1024" class="home-icon30">
+                <path
+                  d="M512 854q140 0 241-101t101-241-101-241-241-101-241 101-101 241 101 241 241 101zM512 86q176 0 301 125t125 301-125 301-301 125-301-125-125-301 125-301 301-125zM506 390q-80 0-80 116v12q0 116 80 116 30 0 50-17t20-43h76q0 50-44 88-42 36-102 36-80 0-122-48t-42-132v-12q0-82 40-128 48-54 124-54 66 0 104 38 42 42 42 98h-76q0-14-6-26-10-20-14-24-20-20-50-20z"
+                ></path>
+              </svg>
+              <span class="home-link12">Copyright Kadosa Varga, 2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+  </body>
 </html>
