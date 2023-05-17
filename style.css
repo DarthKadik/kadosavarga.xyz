@@ -1,3 +1,19 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+#typeform {
+  position: relative;
+  z-index: 200;
+}
+
 :root {
   --dl-color-gray-500: #595959;
   --dl-color-gray-700: #999999;

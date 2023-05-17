@@ -9,6 +9,12 @@
   flex-direction: column;
   background-color: #111111;
 }
+
+.home-div {
+  width: 758px;
+  height: 630px;
+}
+
 .home-navbar-container {
   width: 100%;
   display: flex;
@@ -972,13 +978,16 @@
 }
 @media(max-width: 767px) {
   .home-navbar {
-    position: relative;
+    display: none;
+  }
+  .home-section-separator {
+    display: none;
   }
   .home-links-container {
     display: none;
   }
   .home-burger-menu {
-    display: flex;
+    display: none;
     padding: var(--dl-space-space-halfunit);
     margin-left: var(--dl-space-space-tripleunit);
     border-radius: var(--dl-radius-radius-radius4);
