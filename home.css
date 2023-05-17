@@ -160,7 +160,6 @@
   top: 0px;
   left: 0px;
   width: 100%;
-  border: 2px dashed rgba(120, 120, 120, 0.4);
   height: 100%;
   display: flex;
   opacity: 0.85;
@@ -978,6 +977,11 @@
   .home-navbar {
     display: none;
   }
+
+  .home-heading3 {
+    font-size: 75px;
+  }
+
   .home-section-separator {
     display: none;
   }
