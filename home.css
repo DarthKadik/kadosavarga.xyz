@@ -10,6 +10,28 @@
   background-color: #111111;
 }
 
+@media screen and (max-width: 1024px) {
+  /* Adjust styles for tablets */
+  .home-card, .home-card1, .home-card2 {
+      width: 45%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjust styles for mobile */
+  .home-card, .home-card1, .home-card2 {
+      width: 100%;
+  }
+  .home-heading-container, .home-heading-container1, .home-heading-container2, .home-heading-container3 {
+      width: 80%;
+      text-align: center;
+  }
+  .home-navbar, .home-hero, .home-features, .home-footer {
+      flex-direction: column;
+  }
+}
+
+
 .home-testimonial1 {
   width: 100%;
   border: 2px dashed rgba(120, 120, 120, 0.4);
